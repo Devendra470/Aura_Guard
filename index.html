@@ -217,7 +217,7 @@ document.addEventListener('DOMContentLoaded', () => {
   // --- Fetch Transactions from backend ---
   async function fetchTransactions() {
     try {
-      const res = await fetch('http://localhost:4000/transactions');
+      const res = await fetch(' https://aura-guard.onrender.com/transactions');
       const data = await res.json();
       return data;
     } catch (err) {
@@ -228,7 +228,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   async function fetchFlaggedTransactions() {
     try {
-      const res = await fetch('http://localhost:4000/flagged-transactions');
+      const res = await fetch(' https://aura-guard.onrender.com/flagged-transactions');
       const data = await res.json();
       return data;
     } catch (err) {
@@ -288,7 +288,7 @@ document.addEventListener('DOMContentLoaded', () => {
   async function updateTransactionStatus(status) {
     if (!currentReviewingId) return;
     try {
-      await fetch(`http://localhost:4000/transactions/${currentReviewingId}/status`, {
+      await fetch(` https://aura-guard.onrender.com/transactions/${currentReviewingId}/status`, {
         method:'PATCH',
         headers:{'Content-Type':'application/json'},
         body: JSON.stringify({status})
@@ -312,7 +312,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   reportsBtn.addEventListener('click', async () => {
     try {
-      const res = await fetch('http://localhost:4000/reports');
+      const res = await fetch(' https://aura-guard.onrender.com/reports');
       const data = await res.json();
       alert(`Confirmed Frauds: ${data.confirmedFraud}`);
     } catch(err){console.error(err);}
@@ -324,7 +324,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const total = (await fetchTransactions()).length;
     const flagged = transactions.length;
-    const fraudRes = await fetch('http://localhost:4000/reports');
+    const fraudRes = await fetch(' https://aura-guard.onrender.com/reports');
     const fraudData = await fraudRes.json();
 
     kpiTotalEl.textContent = total;

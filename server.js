@@ -81,7 +81,7 @@ setInterval(() => {
   transactions.push(generateRandomTransaction());
   writeTransactions(transactions);
   console.log('New transaction generated. Total:', transactions.length);
-}, 2000);
+}, 5000);
 
 // ---------------------- Start Server ----------------------
 app.listen(PORT, () => {
