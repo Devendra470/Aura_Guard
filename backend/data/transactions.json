@@ -1,0 +1,960 @@
+[
+  {
+    "id": "TXN175647348193023",
+    "timestamp": "2025-08-29T13:18:01.930Z",
+    "amount": 772.91,
+    "merchant": "Merchant 30",
+    "location": "City 6",
+    "card": "**** **** **** 6105",
+    "suspicionScore": 7,
+    "status": "Approved",
+    "reasons": []
+  },
+  {
+    "id": "TXN175647347992528",
+    "timestamp": "2025-08-29T13:17:59.925Z",
+    "amount": 1074.41,
+    "merchant": "Merchant 91",
+    "location": "City 11",
+    "card": "**** **** **** 5494",
+    "suspicionScore": 15,
+    "status": "Approved",
+    "reasons": []
+  },
+  {
+    "id": "TXN175647347792425",
+    "timestamp": "2025-08-29T13:17:57.924Z",
+    "amount": 289.49,
+    "merchant": "Merchant 98",
+    "location": "City 10",
+    "card": "**** **** **** 1267",
+    "suspicionScore": 42,
+    "status": "Approved",
+    "reasons": []
+  },
+  {
+    "id": "TXN175647347591157",
+    "timestamp": "2025-08-29T13:17:55.911Z",
+    "amount": 44.3,
+    "merchant": "Merchant 63",
+    "location": "City 29",
+    "card": "**** **** **** 1151",
+    "suspicionScore": 24,
+    "status": "Approved",
+    "reasons": []
+  },
+  {
+    "id": "TXN175647347390949",
+    "timestamp": "2025-08-29T13:17:53.909Z",
+    "amount": 780.06,
+    "merchant": "Merchant 74",
+    "location": "City 9",
+    "card": "**** **** **** 6744",
+    "suspicionScore": 15,
+    "status": "Approved",
+    "reasons": []
+  },
+  {
+    "id": "TXN175647347189551",
+    "timestamp": "2025-08-29T13:17:51.895Z",
+    "amount": 1606.74,
+    "merchant": "Merchant 84",
+    "location": "City 37",
+    "card": "**** **** **** 4136",
+    "suspicionScore": 7,
+    "status": "Approved",
+    "reasons": []
+  },
+  {
+    "id": "TXN175647346983527",
+    "timestamp": "2025-08-29T13:17:49.835Z",
+    "amount": 1197.53,
+    "merchant": "Merchant 30",
+    "location": "City 14",
+    "card": "**** **** **** 7360",
+    "suspicionScore": 16,
+    "status": "Approved",
+    "reasons": []
+  },
+  {
+    "id": "TXN175647346783282",
+    "timestamp": "2025-08-29T13:17:47.832Z",
+    "amount": 1130.8,
+    "merchant": "Merchant 27",
+    "location": "City 39",
+    "card": "**** **** **** 8662",
+    "suspicionScore": 45,
+    "status": "Approved",
+    "reasons": []
+  },
+  {
+    "id": "TXN17564734658273",
+    "timestamp": "2025-08-29T13:17:45.827Z",
+    "amount": 234.03,
+    "merchant": "Merchant 85",
+    "location": "City 15",
+    "card": "**** **** **** 2783",
+    "suspicionScore": 8,
+    "status": "Approved",
+    "reasons": []
+  },
+  {
+    "id": "TXN175647346380957",
+    "timestamp": "2025-08-29T13:17:43.810Z",
+    "amount": 2000.82,
+    "merchant": "Merchant 50",
+    "location": "City 47",
+    "card": "**** **** **** 8745",
+    "suspicionScore": 26,
+    "status": "Approved",
+    "reasons": []
+  },
+  {
+    "id": "TXN175647346180517",
+    "timestamp": "2025-08-29T13:17:41.805Z",
+    "amount": 458.09,
+    "merchant": "Merchant 5",
+    "location": "City 47",
+    "card": "**** **** **** 3114",
+    "suspicionScore": 18,
+    "status": "Approved",
+    "reasons": []
+  },
+  {
+    "id": "TXN175647345979893",
+    "timestamp": "2025-08-29T13:17:39.798Z",
+    "amount": 626.53,
+    "merchant": "Merchant 21",
+    "location": "City 10",
+    "card": "**** **** **** 3170",
+    "suspicionScore": 29,
+    "status": "Approved",
+    "reasons": []
+  },
+  {
+    "id": "TXN175647345779111",
+    "timestamp": "2025-08-29T13:17:37.791Z",
+    "amount": 1170.11,
+    "merchant": "Merchant 66",
+    "location": "City 17",
+    "card": "**** **** **** 7041",
+    "suspicionScore": 96,
+    "status": "Dismissed",
+    "reasons": [
+      "Amount unusually high",
+      "Odd transaction time"
+    ]
+  },
+  {
+    "id": "TXN175647345578952",
+    "timestamp": "2025-08-29T13:17:35.789Z",
+    "amount": 1424,
+    "merchant": "Merchant 20",
+    "location": "City 12",
+    "card": "**** **** **** 8074",
+    "suspicionScore": 41,
+    "status": "Approved",
+    "reasons": []
+  },
+  {
+    "id": "TXN175647345378347",
+    "timestamp": "2025-08-29T13:17:33.783Z",
+    "amount": 1360.97,
+    "merchant": "Merchant 40",
+    "location": "City 28",
+    "card": "**** **** **** 3452",
+    "suspicionScore": 0,
+    "status": "Approved",
+    "reasons": []
+  },
+  {
+    "id": "TXN175647345177860",
+    "timestamp": "2025-08-29T13:17:31.778Z",
+    "amount": 119.16,
+    "merchant": "Merchant 5",
+    "location": "City 6",
+    "card": "**** **** **** 6468",
+    "suspicionScore": 49,
+    "status": "Approved",
+    "reasons": []
+  },
+  {
+    "id": "TXN175647344976835",
+    "timestamp": "2025-08-29T13:17:29.768Z",
+    "amount": 559.73,
+    "merchant": "Merchant 16",
+    "location": "City 39",
+    "card": "**** **** **** 4037",
+    "suspicionScore": 30,
+    "status": "Approved",
+    "reasons": []
+  },
+  {
+    "id": "TXN175647344775727",
+    "timestamp": "2025-08-29T13:17:27.757Z",
+    "amount": 986.08,
+    "merchant": "Merchant 11",
+    "location": "City 33",
+    "card": "**** **** **** 3521",
+    "suspicionScore": 14,
+    "status": "Approved",
+    "reasons": []
+  },
+  {
+    "id": "TXN175647344575065",
+    "timestamp": "2025-08-29T13:17:25.750Z",
+    "amount": 390.37,
+    "merchant": "Merchant 91",
+    "location": "City 18",
+    "card": "**** **** **** 9432",
+    "suspicionScore": 18,
+    "status": "Approved",
+    "reasons": []
+  },
+  {
+    "id": "TXN175647344373461",
+    "timestamp": "2025-08-29T13:17:23.734Z",
+    "amount": 157.99,
+    "merchant": "Merchant 45",
+    "location": "City 40",
+    "card": "**** **** **** 3387",
+    "suspicionScore": 49,
+    "status": "Approved",
+    "reasons": []
+  },
+  {
+    "id": "TXN175647344173158",
+    "timestamp": "2025-08-29T13:17:21.731Z",
+    "amount": 1500.47,
+    "merchant": "Merchant 79",
+    "location": "City 12",
+    "card": "**** **** **** 3044",
+    "suspicionScore": 16,
+    "status": "Approved",
+    "reasons": []
+  },
+  {
+    "id": "TXN175647343970943",
+    "timestamp": "2025-08-29T13:17:19.709Z",
+    "amount": 1037.21,
+    "merchant": "Merchant 66",
+    "location": "City 37",
+    "card": "**** **** **** 2686",
+    "suspicionScore": 12,
+    "status": "Approved",
+    "reasons": []
+  },
+  {
+    "id": "TXN175647343770345",
+    "timestamp": "2025-08-29T13:17:17.703Z",
+    "amount": 1253.3,
+    "merchant": "Merchant 4",
+    "location": "City 41",
+    "card": "**** **** **** 9948",
+    "suspicionScore": 71,
+    "status": "Pending Review",
+    "reasons": [
+      "Amount unusually high",
+      "Odd transaction time"
+    ]
+  },
+  {
+    "id": "TXN175647343569539",
+    "timestamp": "2025-08-29T13:17:15.695Z",
+    "amount": 1272.76,
+    "merchant": "Merchant 29",
+    "location": "City 40",
+    "card": "**** **** **** 3805",
+    "suspicionScore": 33,
+    "status": "Approved",
+    "reasons": []
+  },
+  {
+    "id": "TXN175647343368970",
+    "timestamp": "2025-08-29T13:17:13.689Z",
+    "amount": 473.93,
+    "merchant": "Merchant 30",
+    "location": "City 27",
+    "card": "**** **** **** 9228",
+    "suspicionScore": 26,
+    "status": "Approved",
+    "reasons": []
+  },
+  {
+    "id": "TXN17564734316826",
+    "timestamp": "2025-08-29T13:17:11.683Z",
+    "amount": 833.72,
+    "merchant": "Merchant 30",
+    "location": "City 21",
+    "card": "**** **** **** 3556",
+    "suspicionScore": 35,
+    "status": "Approved",
+    "reasons": []
+  },
+  {
+    "id": "TXN175647342968287",
+    "timestamp": "2025-08-29T13:17:09.682Z",
+    "amount": 154.37,
+    "merchant": "Merchant 35",
+    "location": "City 9",
+    "card": "**** **** **** 1328",
+    "suspicionScore": 24,
+    "status": "Approved",
+    "reasons": []
+  },
+  {
+    "id": "TXN175647342767230",
+    "timestamp": "2025-08-29T13:17:07.672Z",
+    "amount": 359.13,
+    "merchant": "Merchant 46",
+    "location": "City 35",
+    "card": "**** **** **** 2496",
+    "suspicionScore": 43,
+    "status": "Approved",
+    "reasons": []
+  },
+  {
+    "id": "TXN175647342566668",
+    "timestamp": "2025-08-29T13:17:05.666Z",
+    "amount": 804.16,
+    "merchant": "Merchant 99",
+    "location": "City 25",
+    "card": "**** **** **** 6905",
+    "suspicionScore": 15,
+    "status": "Approved",
+    "reasons": []
+  },
+  {
+    "id": "TXN175647342365821",
+    "timestamp": "2025-08-29T13:17:03.658Z",
+    "amount": 1717.24,
+    "merchant": "Merchant 8",
+    "location": "City 14",
+    "card": "**** **** **** 6751",
+    "suspicionScore": 22,
+    "status": "Approved",
+    "reasons": []
+  },
+  {
+    "id": "TXN17564734216486",
+    "timestamp": "2025-08-29T13:17:01.648Z",
+    "amount": 119.18,
+    "merchant": "Merchant 72",
+    "location": "City 31",
+    "card": "**** **** **** 5616",
+    "suspicionScore": 26,
+    "status": "Approved",
+    "reasons": []
+  },
+  {
+    "id": "TXN175647341964175",
+    "timestamp": "2025-08-29T13:16:59.641Z",
+    "amount": 216.04,
+    "merchant": "Merchant 64",
+    "location": "City 18",
+    "card": "**** **** **** 8163",
+    "suspicionScore": 31,
+    "status": "Approved",
+    "reasons": []
+  },
+  {
+    "id": "TXN175647341761795",
+    "timestamp": "2025-08-29T13:16:57.617Z",
+    "amount": 794.77,
+    "merchant": "Merchant 77",
+    "location": "City 40",
+    "card": "**** **** **** 1967",
+    "suspicionScore": 96,
+    "status": "Pending Review",
+    "reasons": [
+      "Amount unusually high",
+      "Odd transaction time"
+    ]
+  },
+  {
+    "id": "TXN175647341561616",
+    "timestamp": "2025-08-29T13:16:55.616Z",
+    "amount": 1460.7,
+    "merchant": "Merchant 10",
+    "location": "City 15",
+    "card": "**** **** **** 1867",
+    "suspicionScore": 90,
+    "status": "Pending Review",
+    "reasons": [
+      "Amount unusually high",
+      "Odd transaction time"
+    ]
+  },
+  {
+    "id": "TXN175647341361688",
+    "timestamp": "2025-08-29T13:16:53.616Z",
+    "amount": 1382.83,
+    "merchant": "Merchant 71",
+    "location": "City 36",
+    "card": "**** **** **** 6350",
+    "suspicionScore": 96,
+    "status": "Pending Review",
+    "reasons": [
+      "Amount unusually high",
+      "Odd transaction time"
+    ]
+  },
+  {
+    "id": "TXN17564734116140",
+    "timestamp": "2025-08-29T13:16:51.614Z",
+    "amount": 1505.02,
+    "merchant": "Merchant 0",
+    "location": "City 35",
+    "card": "**** **** **** 8543",
+    "suspicionScore": 11,
+    "status": "Approved",
+    "reasons": []
+  },
+  {
+    "id": "TXN175647340961441",
+    "timestamp": "2025-08-29T13:16:49.614Z",
+    "amount": 1497.7,
+    "merchant": "Merchant 60",
+    "location": "City 9",
+    "card": "**** **** **** 3567",
+    "suspicionScore": 62,
+    "status": "Pending Review",
+    "reasons": [
+      "Amount unusually high",
+      "Odd transaction time"
+    ]
+  },
+  {
+    "id": "TXN175647340761247",
+    "timestamp": "2025-08-29T13:16:47.612Z",
+    "amount": 581.49,
+    "merchant": "Merchant 42",
+    "location": "City 13",
+    "card": "**** **** **** 5194",
+    "suspicionScore": 5,
+    "status": "Approved",
+    "reasons": []
+  },
+  {
+    "id": "TXN17564734056095",
+    "timestamp": "2025-08-29T13:16:45.609Z",
+    "amount": 907.27,
+    "merchant": "Merchant 21",
+    "location": "City 19",
+    "card": "**** **** **** 4553",
+    "suspicionScore": 46,
+    "status": "Approved",
+    "reasons": []
+  },
+  {
+    "id": "TXN175647340360194",
+    "timestamp": "2025-08-29T13:16:43.601Z",
+    "amount": 50.43,
+    "merchant": "Merchant 48",
+    "location": "City 31",
+    "card": "**** **** **** 8495",
+    "suspicionScore": 5,
+    "status": "Approved",
+    "reasons": []
+  },
+  {
+    "id": "TXN175647340159872",
+    "timestamp": "2025-08-29T13:16:41.599Z",
+    "amount": 573.06,
+    "merchant": "Merchant 19",
+    "location": "City 14",
+    "card": "**** **** **** 4591",
+    "suspicionScore": 16,
+    "status": "Approved",
+    "reasons": []
+  },
+  {
+    "id": "TXN175647339959078",
+    "timestamp": "2025-08-29T13:16:39.590Z",
+    "amount": 718.5,
+    "merchant": "Merchant 36",
+    "location": "City 38",
+    "card": "**** **** **** 4673",
+    "suspicionScore": 98,
+    "status": "Pending Review",
+    "reasons": [
+      "Amount unusually high",
+      "Odd transaction time"
+    ]
+  },
+  {
+    "id": "TXN17564733975821",
+    "timestamp": "2025-08-29T13:16:37.582Z",
+    "amount": 1884.84,
+    "merchant": "Merchant 13",
+    "location": "City 34",
+    "card": "**** **** **** 9709",
+    "suspicionScore": 30,
+    "status": "Approved",
+    "reasons": []
+  },
+  {
+    "id": "TXN175647339557497",
+    "timestamp": "2025-08-29T13:16:35.574Z",
+    "amount": 1921.15,
+    "merchant": "Merchant 17",
+    "location": "City 41",
+    "card": "**** **** **** 3574",
+    "suspicionScore": 19,
+    "status": "Approved",
+    "reasons": []
+  },
+  {
+    "id": "TXN175647339356429",
+    "timestamp": "2025-08-29T13:16:33.564Z",
+    "amount": 879.1,
+    "merchant": "Merchant 37",
+    "location": "City 35",
+    "card": "**** **** **** 4062",
+    "suspicionScore": 35,
+    "status": "Approved",
+    "reasons": []
+  },
+  {
+    "id": "TXN175647339156090",
+    "timestamp": "2025-08-29T13:16:31.560Z",
+    "amount": 309.12,
+    "merchant": "Merchant 75",
+    "location": "City 13",
+    "card": "**** **** **** 8635",
+    "suspicionScore": 41,
+    "status": "Approved",
+    "reasons": []
+  },
+  {
+    "id": "TXN175647338955336",
+    "timestamp": "2025-08-29T13:16:29.553Z",
+    "amount": 740.13,
+    "merchant": "Merchant 72",
+    "location": "City 45",
+    "card": "**** **** **** 4625",
+    "suspicionScore": 45,
+    "status": "Approved",
+    "reasons": []
+  },
+  {
+    "id": "TXN175647338754895",
+    "timestamp": "2025-08-29T13:16:27.548Z",
+    "amount": 479.62,
+    "merchant": "Merchant 53",
+    "location": "City 33",
+    "card": "**** **** **** 7046",
+    "suspicionScore": 26,
+    "status": "Approved",
+    "reasons": []
+  },
+  {
+    "id": "TXN175647338554071",
+    "timestamp": "2025-08-29T13:16:25.540Z",
+    "amount": 1989.52,
+    "merchant": "Merchant 45",
+    "location": "City 8",
+    "card": "**** **** **** 8107",
+    "suspicionScore": 29,
+    "status": "Approved",
+    "reasons": []
+  },
+  {
+    "id": "TXN175647338352726",
+    "timestamp": "2025-08-29T13:16:23.527Z",
+    "amount": 413.06,
+    "merchant": "Merchant 11",
+    "location": "City 9",
+    "card": "**** **** **** 9822",
+    "suspicionScore": 39,
+    "status": "Approved",
+    "reasons": []
+  },
+  {
+    "id": "TXN175647338152262",
+    "timestamp": "2025-08-29T13:16:21.525Z",
+    "amount": 1429.63,
+    "merchant": "Merchant 81",
+    "location": "City 7",
+    "card": "**** **** **** 8349",
+    "suspicionScore": 49,
+    "status": "Approved",
+    "reasons": []
+  },
+  {
+    "id": "TXN001",
+    "amount": 1200.5,
+    "suspicionScore": 92,
+    "status": "Confirmed Fraud",
+    "card": "XXXX-XXXX-XXXX-1234",
+    "merchant": "Amazon",
+    "location": "Delhi, India",
+    "reasons": [
+      "Unusually high amount",
+      "New merchant location"
+    ]
+  },
+  {
+    "id": "TXN002",
+    "amount": 45.99,
+    "suspicionScore": 35,
+    "status": "Dismissed",
+    "card": "XXXX-XXXX-XXXX-5678",
+    "merchant": "Flipkart",
+    "location": "Mumbai, India",
+    "reasons": [
+      "Low suspicion, irregular merchant"
+    ]
+  },
+  {
+    "id": "TXN003",
+    "amount": 5000,
+    "suspicionScore": 87,
+    "status": "Dismissed",
+    "card": "XXXX-XXXX-XXXX-4321",
+    "merchant": "Big Bazaar",
+    "location": "Bengaluru, India",
+    "reasons": [
+      "High amount",
+      "Suspicious location"
+    ]
+  },
+  {
+    "id": "0cfde1b1-5bb0-4a79-9524-a2a181f97b4b",
+    "amount": 254.11,
+    "merchant": "Best Buy",
+    "location": "Delhi",
+    "card": "**** **** **** 9012",
+    "suspicionScore": 81,
+    "status": "Pending Review",
+    "reasons": [
+      "High amount",
+      "New merchant"
+    ]
+  },
+  {
+    "id": "c80821cf-6a2a-42b4-ad57-56a3c792e1e5",
+    "amount": 905.77,
+    "merchant": "Flipkart",
+    "location": "Chennai",
+    "card": "**** **** **** 5678",
+    "suspicionScore": 7,
+    "status": "Pending Review",
+    "reasons": [
+      "High amount",
+      "Unusual location",
+      "New merchant"
+    ]
+  },
+  {
+    "id": "f2f9513b-8073-4619-9f4c-9a41c9f8b00d",
+    "amount": 207.34,
+    "merchant": "Walmart",
+    "location": "Mumbai",
+    "card": "**** **** **** 1234",
+    "suspicionScore": 47,
+    "status": "Pending Review",
+    "reasons": []
+  },
+  {
+    "id": "3fdf146d-3f71-42e5-a539-65dcb3453860",
+    "amount": 194.67,
+    "merchant": "Walmart",
+    "location": "Hyderabad",
+    "card": "**** **** **** 1234",
+    "suspicionScore": 99,
+    "status": "Pending Review",
+    "reasons": [
+      "High amount",
+      "Unusual location"
+    ]
+  },
+  {
+    "id": "ba0c162d-e7d9-4fc3-8083-fb732bbe95af",
+    "amount": 351.51,
+    "merchant": "Best Buy",
+    "location": "Chennai",
+    "card": "**** **** **** 1234",
+    "suspicionScore": 42,
+    "status": "Pending Review",
+    "reasons": [
+      "High amount"
+    ]
+  },
+  {
+    "id": "b433f137-482c-4b9e-aa5d-d4ac62f484c3",
+    "amount": 860.69,
+    "merchant": "Netflix",
+    "location": "Pune",
+    "card": "**** **** **** 1234",
+    "suspicionScore": 55,
+    "status": "Pending Review",
+    "reasons": [
+      "Unusual location"
+    ]
+  },
+  {
+    "id": "7600771b-f8d1-4181-82e6-27081ad3b827",
+    "amount": 332.39,
+    "merchant": "Walmart",
+    "location": "Hyderabad",
+    "card": "**** **** **** 5678",
+    "suspicionScore": 47,
+    "status": "Pending Review",
+    "reasons": [
+      "High amount",
+      "New merchant"
+    ]
+  },
+  {
+    "id": "d009629b-d3d4-45af-87ca-43261aa0c6a8",
+    "amount": 490.95,
+    "merchant": "Walmart",
+    "location": "Bangalore",
+    "card": "**** **** **** 5678",
+    "suspicionScore": 80,
+    "status": "Pending Review",
+    "reasons": [
+      "High amount",
+      "Unusual location",
+      "New merchant"
+    ]
+  },
+  {
+    "id": "3d6a5deb-79a9-4b6f-bcda-a0789f3047a9",
+    "amount": 591.91,
+    "merchant": "Walmart",
+    "location": "Chennai",
+    "card": "**** **** **** 5678",
+    "suspicionScore": 91,
+    "status": "Pending Review",
+    "reasons": [
+      "High amount"
+    ]
+  },
+  {
+    "id": "ec507d54-b7f1-4474-9571-b18465cf4bd8",
+    "amount": 904.76,
+    "merchant": "Apple Store",
+    "location": "Delhi",
+    "card": "**** **** **** 1234",
+    "suspicionScore": 80,
+    "status": "Pending Review",
+    "reasons": [
+      "High amount",
+      "Unusual location",
+      "New merchant"
+    ]
+  },
+  {
+    "id": "800a3e3c-c557-4efa-b454-2f8e2af6c932",
+    "amount": 287.59,
+    "merchant": "Best Buy",
+    "location": "Hyderabad",
+    "card": "**** **** **** 1234",
+    "suspicionScore": 53,
+    "status": "Pending Review",
+    "reasons": [
+      "High amount",
+      "New merchant"
+    ]
+  },
+  {
+    "id": "53be714b-a4e3-4175-adf7-11121f242929",
+    "amount": 1004.08,
+    "merchant": "Best Buy",
+    "location": "Hyderabad",
+    "card": "**** **** **** 9012",
+    "suspicionScore": 38,
+    "status": "Pending Review",
+    "reasons": [
+      "Unusual location"
+    ]
+  },
+  {
+    "id": "677b9a41-b395-4f36-a015-0d7a40417cb2",
+    "amount": 928.39,
+    "merchant": "Flipkart",
+    "location": "Pune",
+    "card": "**** **** **** 9012",
+    "suspicionScore": 41,
+    "status": "Pending Review",
+    "reasons": [
+      "High amount"
+    ]
+  },
+  {
+    "id": "c86b509b-f7fa-4c1f-ade2-cbe56313dac4",
+    "amount": 24.56,
+    "merchant": "Amazon",
+    "location": "Pune",
+    "card": "**** **** **** 1234",
+    "suspicionScore": 34,
+    "status": "Pending Review",
+    "reasons": [
+      "High amount",
+      "Unusual location",
+      "New merchant"
+    ]
+  },
+  {
+    "id": "eb8f35dc-2c9d-4bde-8fc6-05a94383ddcd",
+    "amount": 791.82,
+    "merchant": "Netflix",
+    "location": "Hyderabad",
+    "card": "**** **** **** 5678",
+    "suspicionScore": 13,
+    "status": "Pending Review",
+    "reasons": [
+      "High amount",
+      "New merchant"
+    ]
+  },
+  {
+    "id": "830c3721-5f94-42d2-aaf7-fec015e44235",
+    "amount": 1004.99,
+    "merchant": "Best Buy",
+    "location": "Chennai",
+    "card": "**** **** **** 1234",
+    "suspicionScore": 57,
+    "status": "Pending Review",
+    "reasons": []
+  },
+  {
+    "id": "af2f40d1-9a32-4fcb-97bc-794621c73076",
+    "amount": 852.93,
+    "merchant": "Apple Store",
+    "location": "Hyderabad",
+    "card": "**** **** **** 5678",
+    "suspicionScore": 41,
+    "status": "Pending Review",
+    "reasons": [
+      "Unusual location",
+      "New merchant"
+    ]
+  },
+  {
+    "id": "34fbb93d-7e39-465a-8a21-643000f334b5",
+    "amount": 129.83,
+    "merchant": "Flipkart",
+    "location": "Pune",
+    "card": "**** **** **** 9012",
+    "suspicionScore": 44,
+    "status": "Pending Review",
+    "reasons": [
+      "Unusual location"
+    ]
+  },
+  {
+    "id": "e8c6d09b-b393-41df-ac63-834f9408ab5e",
+    "amount": 958.35,
+    "merchant": "Netflix",
+    "location": "Bangalore",
+    "card": "**** **** **** 1234",
+    "suspicionScore": 24,
+    "status": "Pending Review",
+    "reasons": [
+      "Unusual location"
+    ]
+  },
+  {
+    "id": "1f756b10-4675-4a9b-8e3a-3d2482edfecf",
+    "amount": 253.08,
+    "merchant": "Best Buy",
+    "location": "Delhi",
+    "card": "**** **** **** 9012",
+    "suspicionScore": 76,
+    "status": "Pending Review",
+    "reasons": [
+      "New merchant"
+    ]
+  },
+  {
+    "id": "e429b25d-31f6-40d5-8eb8-ea9a4bdc7183",
+    "amount": 12.59,
+    "merchant": "Walmart",
+    "location": "Mumbai",
+    "card": "**** **** **** 1234",
+    "suspicionScore": 13,
+    "status": "Pending Review",
+    "reasons": [
+      "High amount"
+    ]
+  },
+  {
+    "id": "66689166-9e3b-4cbd-9adc-e54524064db3",
+    "amount": 860.11,
+    "merchant": "Flipkart",
+    "location": "Pune",
+    "card": "**** **** **** 1234",
+    "suspicionScore": 25,
+    "status": "Pending Review",
+    "reasons": [
+      "High amount"
+    ]
+  },
+  {
+    "id": "52de1cda-e22f-4cfc-8c22-8d64da30cc3f",
+    "amount": 378.39,
+    "merchant": "Flipkart",
+    "location": "Hyderabad",
+    "card": "**** **** **** 5678",
+    "suspicionScore": 32,
+    "status": "Pending Review",
+    "reasons": [
+      "New merchant"
+    ]
+  },
+  {
+    "id": "0488d244-bc90-46a4-9db5-1251e2b44e90",
+    "amount": 871.2,
+    "merchant": "Netflix",
+    "location": "Delhi",
+    "card": "**** **** **** 1234",
+    "suspicionScore": 78,
+    "status": "Pending Review",
+    "reasons": [
+      "High amount",
+      "Unusual location",
+      "New merchant"
+    ]
+  },
+  {
+    "id": "b1b139c8-541e-4079-b0e2-b1149f1f521e",
+    "amount": 604.7,
+    "merchant": "Walmart",
+    "location": "Bangalore",
+    "card": "**** **** **** 5678",
+    "suspicionScore": 72,
+    "status": "Pending Review",
+    "reasons": [
+      "New merchant"
+    ]
+  },
+  {
+    "id": "79bbc99a-9f7e-46e0-884a-973df889a8d1",
+    "amount": 414.13,
+    "merchant": "Amazon",
+    "location": "Pune",
+    "card": "**** **** **** 5678",
+    "suspicionScore": 31,
+    "status": "Pending Review",
+    "reasons": [
+      "High amount",
+      "Unusual location",
+      "New merchant"
+    ]
+  },
+  {
+    "id": "0a62ba91-d5bd-4254-b800-de753469a866",
+    "amount": 285.41,
+    "merchant": "Amazon",
+    "location": "Hyderabad",
+    "card": "**** **** **** 1234",
+    "suspicionScore": 55,
+    "status": "Pending Review",
+    "reasons": [
+      "Unusual location"
+    ]
+  }
+]
