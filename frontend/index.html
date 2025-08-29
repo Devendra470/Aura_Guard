@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en" class="scroll-smooth">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,7 +11,9 @@
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans:wght@400;600&family=Roboto+Mono&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans:wght@400;600&family=Roboto+Mono&display=swap"
+    rel="stylesheet">
 
   <style>
     :root {
@@ -19,234 +22,422 @@
       --light-grey: #E0E1DD;
       --alert-red: #FF6B6B;
     }
-    body { background-color: var(--midnight-blue); color: var(--light-grey); font-family: 'Open Sans', sans-serif; }
-    h1,h2,h3 { font-family:'Montserrat', sans-serif; text-transform: uppercase; font-weight:700; }
-    .font-data { font-family: 'Roboto Mono', monospace; }
-    .bg-midnight-blue { background-color: var(--midnight-blue); }
-    .bg-aquamarine-green { background-color: var(--aquamarine-green); }
-    .bg-alert-red { background-color: var(--alert-red); }
-    .text-aquamarine-green { color: var(--aquamarine-green); }
-    .text-alert-red { color: var(--alert-red); }
 
-    .cta-glow { box-shadow: 0 0 5px var(--aquamarine-green),0 0 15px var(--aquamarine-green),0 0 25px var(--aquamarine-green); transition: box-shadow 0.3s ease-in-out; }
-    .cta-glow:hover { box-shadow:0 0 10px var(--aquamarine-green),0 0 25px var(--aquamarine-green),0 0 40px var(--aquamarine-green); }
+    body {
+      background-color: var(--midnight-blue);
+      color: var(--light-grey);
+      font-family: 'Open Sans', sans-serif;
+    }
 
-    .feature-card { transition:border-color 0.3s ease, transform 0.3s ease; border-color: rgba(27,154,170,0.2); }
-    .feature-card:hover { transform: translateY(-5px); border-color: var(--aquamarine-green); }
+    h1,
+    h2,
+    h3 {
+      font-family: 'Montserrat', sans-serif;
+      text-transform: uppercase;
+      font-weight: 700;
+    }
 
-    @keyframes pulse {0%,100%{opacity:1;}50%{opacity:0.5;}}
-    .live-pulse {animation:pulse 2s cubic-bezier(0.4,0,0.6,1) infinite;}
+    .font-data {
+      font-family: 'Roboto Mono', monospace;
+    }
 
-    .custom-scrollbar::-webkit-scrollbar {width:8px;}
-    .custom-scrollbar::-webkit-scrollbar-track {background:#0d1b2a;}
-    .custom-scrollbar::-webkit-scrollbar-thumb {background-color:#1B9AAA; border-radius:10px; border:2px solid #0d1b2a;}
+    .bg-midnight-blue {
+      background-color: var(--midnight-blue);
+    }
+
+    .bg-aquamarine-green {
+      background-color: var(--aquamarine-green);
+    }
+
+    .bg-alert-red {
+      background-color: var(--alert-red);
+    }
+
+    .text-aquamarine-green {
+      color: var(--aquamarine-green);
+    }
+
+    .text-alert-red {
+      color: var(--alert-red);
+    }
+
+    .cta-glow {
+      box-shadow: 0 0 5px var(--aquamarine-green), 0 0 15px var(--aquamarine-green), 0 0 25px var(--aquamarine-green);
+      transition: box-shadow 0.3s ease-in-out;
+    }
+
+    .cta-glow:hover {
+      box-shadow: 0 0 10px var(--aquamarine-green), 0 0 25px var(--aquamarine-green), 0 0 40px var(--aquamarine-green);
+    }
+
+    .feature-card {
+      transition: border-color 0.3s ease, transform 0.3s ease;
+      border-color: rgba(27, 154, 170, 0.2);
+    }
+
+    .feature-card:hover {
+      transform: translateY(-5px);
+      border-color: var(--aquamarine-green);
+    }
+
+    @keyframes pulse {
+
+      0%,
+      100% {
+        opacity: 1;
+      }
+
+      50% {
+        opacity: 0.5;
+      }
+    }
+
+    .live-pulse {
+      animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+    }
+
+    .custom-scrollbar::-webkit-scrollbar {
+      width: 8px;
+    }
+
+    .custom-scrollbar::-webkit-scrollbar-track {
+      background: #0d1b2a;
+    }
+
+    .custom-scrollbar::-webkit-scrollbar-thumb {
+      background-color: #1B9AAA;
+      border-radius: 10px;
+      border: 2px solid #0d1b2a;
+    }
   </style>
 </head>
+
 <body class="antialiased">
 
-<!-- ================= HOMEPAGE ================= -->
-<div id="homepage">
-  <section class="relative h-screen flex items-center justify-center text-center overflow-hidden">
-    <div class="absolute inset-0 bg-black/60 z-0"></div>
-    <video autoplay muted loop class="absolute top-1/2 left-1/2 w-full h-full object-cover transform -translate-x-1/2 -translate-y-1/2 z-0">
-      <source src="https://assets.mixkit.co/videos/preview/mixkit-abstract-particles-in-motion-2342-large.mp4" type="video/mp4">
-    </video>
-    <div class="relative z-10 p-6">
-      <h1 class="text-4xl md:text-6xl lg:text-7xl text-white">AuraGuard: AI-Powered Fraud Detection</h1>
-      <h3 class="text-lg md:text-xl mt-4 max-w-3xl mx-auto font-normal normal-case text-gray-300">
-        Proactively Secure Your Transactions with Real-Time Machine Learning.
-      </h3>
-      <button id="view-demo-btn" class="mt-8 bg-aquamarine-green text-midnight-blue font-bold py-3 px-8 rounded-full cta-glow text-lg">View Live Demo</button>
-    </div>
-  </section>
-</div>
-
-<!-- ================= DASHBOARD ================= -->
-<div id="dashboard" class="hidden">
-  <div class="flex h-screen bg-midnight-blue">
-    <!-- Sidebar -->
-    <nav class="w-64 bg-gray-900/50 flex-shrink-0 flex flex-col">
-      <div class="h-16 flex items-center justify-center border-b border-gray-700">
-        <h1 class="text-2xl text-white">AuraGuard</h1>
+  <!-- ================= HOMEPAGE ================= -->
+  <div id="homepage">
+    <section class="relative h-screen flex items-center justify-center text-center overflow-hidden">
+      <div class="absolute inset-0 bg-black/60 z-0"></div>
+      <video autoplay muted loop
+        class="absolute top-1/2 left-1/2 w-full h-full object-cover transform -translate-x-1/2 -translate-y-1/2 z-0">
+        <source src="https://assets.mixkit.co/videos/preview/mixkit-abstract-particles-in-motion-2342-large.mp4"
+          type="video/mp4">
+      </video>
+      <div class="relative z-10 p-6">
+        <h1 class="text-4xl md:text-6xl lg:text-7xl text-white">AuraGuard: AI-Powered Fraud Detection</h1>
+        <h3 class="text-lg md:text-xl mt-4 max-w-3xl mx-auto font-normal normal-case text-gray-300">
+          Proactively Secure Your Transactions with Real-Time Machine Learning.
+        </h3>
+        <button id="view-demo-btn"
+          class="mt-8 bg-aquamarine-green text-midnight-blue font-bold py-3 px-8 rounded-full cta-glow text-lg">View
+          Live Demo</button>
       </div>
-      <ul class="flex-grow p-4">
-        <li class="mb-2">
-          <a href="#" id="dashboard-btn" class="flex items-center p-3 rounded-lg bg-aquamarine-green text-midnight-blue font-bold">
-            Dashboard
-          </a>
-        </li>
-        <li class="mb-2">
-          <a href="#" id="all-transactions-btn" class="flex items-center p-3 rounded-lg text-gray-400 hover:bg-gray-700">
-            All Transactions
-          </a>
-        </li>
-        <li class="mb-2">
-          <a href="#" id="reports-btn" class="flex items-center p-3 rounded-lg text-gray-400 hover:bg-gray-700">
-            Reports
-          </a>
-        </li>
-      </ul>
-      <div class="p-4 border-t border-gray-700">
-        <a href="#" id="logout-btn" class="flex items-center p-3 rounded-lg text-gray-400 hover:bg-gray-700">Log Out</a>
-      </div>
-    </nav>
-
-    <!-- Main Content -->
-    <main class="flex-1 p-6 overflow-y-auto">
-      <!-- KPIs -->
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-6">
-        <div class="bg-gray-900/50 p-5 rounded-lg">
-          <h4 class="text-gray-400 text-sm">Total Transactions (24h)</h4>
-          <p id="kpi-total" class="text-3xl font-bold text-white">0</p>
-        </div>
-        <div class="bg-gray-900/50 p-5 rounded-lg">
-          <h4 class="text-gray-400 text-sm">Flagged Transactions (24h)</h4>
-          <p id="kpi-flagged" class="text-3xl font-bold text-yellow-400">0</p>
-        </div>
-        <div class="bg-gray-900/50 p-5 rounded-lg">
-          <h4 class="text-gray-400 text-sm">Confirmed Fraud (Month)</h4>
-          <p id="kpi-fraud" class="text-3xl font-bold text-alert-red">0</p>
-        </div>
-        <div class="bg-gray-900/50 p-5 rounded-lg">
-          <h4 class="text-gray-400 text-sm">Model Accuracy</h4>
-          <p id="kpi-accuracy" class="text-3xl font-bold text-aquamarine-green">99.8%</p>
-        </div>
-      </div>
-
-      <!-- Main Panels -->
-      <div class="grid grid-cols-1 lg:grid-cols-3 gap-6 h-[calc(100vh-12rem)]">
-        <!-- Suspicious Queue -->
-        <div class="lg:col-span-2 bg-gray-900/50 rounded-lg flex flex-col">
-          <div class="p-4 border-b border-gray-700">
-            <h3 class="text-lg flex items-center">
-              Suspicious Activity Queue
-              <span class="ml-3 text-xs bg-green-500 text-white font-bold px-2 py-1 rounded-full live-pulse">LIVE</span>
-            </h3>
+    </section>
+    <!-- Section 2: The Problem -->
+    <section class="py-20 bg-midnight-blue">
+      <div class="container mx-auto px-6">
+        <div class="grid md:grid-cols-2 gap-12 items-center">
+          <div class="flex justify-center">
+            <svg class="w-48 h-48" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+              <path d="M50 10 A 40 40 0 1 0 50 90 A 40 40 0 1 0 50 10 M50 15 A 35 35 0 1 1 50 85 A 35 35 0 1 1 50 15"
+                fill="none" stroke="#E0E1DD" stroke-width="2" />
+              <path d="M40 40 L60 60 M60 40 L40 60" stroke="#FF6B6B" stroke-width="4" stroke-linecap="round" />
+              <circle cx="50" cy="50" r="8" fill="#FF6B6B" />
+            </svg>
           </div>
-          <div class="flex-grow overflow-y-auto custom-scrollbar">
-            <table class="w-full text-sm text-left">
-              <thead class="sticky top-0 bg-gray-900/50">
-                <tr>
-                  <th class="p-3">Transaction ID</th>
-                  <th class="p-3">Amount</th>
-                  <th class="p-3">Suspicion Score</th>
-                  <th class="p-3">Status</th>
-                  <th class="p-3">Action</th>
-                </tr>
-              </thead>
-              <tbody id="transactions-table-body"></tbody>
-            </table>
-          </div>
-        </div>
-
-        <!-- Transaction Detail Panel -->
-        <div id="detail-panel" class="bg-gray-900/50 rounded-lg p-4 flex flex-col">
-          <div id="detail-default" class="m-auto text-center text-gray-500">
-            <p>Select a transaction to view details.</p>
-          </div>
-          <div id="detail-active" class="hidden flex-grow flex flex-col">
-            <h3 class="text-lg mb-4 border-b border-gray-700 pb-2">
-              Reviewing Transaction <span id="detail-id" class="font-data text-aquamarine-green"></span>
-            </h3>
-            <div class="flex-grow space-y-3 text-sm">
-              <p><strong class="text-gray-400 w-24 inline-block">Amount:</strong> <span id="detail-amount"></span></p>
-              <p><strong class="text-gray-400 w-24 inline-block">Card:</strong> <span id="detail-card" class="font-data"></span></p>
-              <p><strong class="text-gray-400 w-24 inline-block">Merchant:</strong> <span id="detail-merchant"></span></p>
-              <p><strong class="text-gray-400 w-24 inline-block">Location:</strong> <span id="detail-location"></span></p>
-              <div class="pt-3">
-                <h4 class="font-bold text-yellow-400">Why was this flagged?</h4>
-                <ul id="detail-reasons" class="list-disc list-inside text-gray-300 mt-2"></ul>
+          <div>
+            <h2 class="text-3xl md:text-4xl">The Hidden Cost of Outdated Rules</h2>
+            <p class="mt-4 text-gray-400">Traditional rule-based fraud detection systems are static and slow. They
+              struggle to adapt to new fraud patterns, leading to high rates of false positives and missed threats that
+              cost your business revenue and trust.</p>
+            <div class="mt-8 space-y-4">
+              <div class="flex items-center">
+                <span class="text-2xl text-aquamarine-green mr-4">✓</span>
+                <p><strong class="text-white">45% of alerts</strong> are false positives, wasting valuable analyst time.
+                </p>
+              </div>
+              <div class="flex items-center">
+                <span class="text-2xl text-aquamarine-green mr-4">✓</span>
+                <p><strong class="text-white">$80 Billion+</strong> lost to online payment fraud annually.</p>
               </div>
             </div>
-            <div class="grid grid-cols-2 gap-4 mt-4">
-              <button id="confirm-fraud-btn" class="w-full bg-alert-red text-white font-bold py-2 rounded-lg hover:bg-red-500 transition">[✖] Confirm Fraud</button>
-              <button id="mark-legit-btn" class="w-full bg-green-600 text-white font-bold py-2 rounded-lg hover:bg-green-500 transition">[✔] Mark as Legitimate</button>
-            </div>
           </div>
         </div>
       </div>
-    </main>
+    </section>
+
+    <!-- Section 3: How It Works -->
+    <section class="py-20 bg-gray-900/50">
+      <div class="container mx-auto px-6 text-center">
+        <h2 class="text-3xl md:text-4xl mb-12">Our 3-Step Defense Protocol</h2>
+        <div class="flex flex-col md:flex-row justify-between items-center gap-8 relative">
+          <!-- Connecting Line -->
+          <div class="hidden md:block absolute top-1/2 left-0 w-full h-0.5 border-t-2 border-dashed border-gray-600"
+            style="transform: translateY(-50%); z-index: -1;"></div>
+          <div class="step-item flex-1">
+            <div class="bg-midnight-blue p-6 rounded-full inline-block border-2 border-aquamarine-green mb-4">
+              <svg class="w-10 h-10 text-aquamarine-green" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M17 14v6m-3-3v3m-3-3v3m-3-3v3M3 17l6-6 4 4 6-6" />
+              </svg>
+            </div>
+            <h3 class="text-xl mb-2">Ingest & Analyze</h3>
+            <p class="text-gray-400">Transactions are processed in real-time through our secure API, instantly
+              converting raw data into hundreds of features.</p>
+          </div>
+          <div class="step-item flex-1">
+            <div class="bg-midnight-blue p-6 rounded-full inline-block border-2 border-aquamarine-green mb-4">
+              <svg class="w-10 h-10 text-aquamarine-green" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M12 6V5m0 14v-1M9.5 9.5l-1.414-1.414M15.914 15.914l-1.414-1.414M14.5 9.5l1.414-1.414M8.086 15.914l1.414-1.414M12 18a6 6 0 100-12 6 6 0 000 12z" />
+              </svg>
+            </div>
+            <h3 class="text-xl mb-2">AI Scoring Engine</h3>
+            <p class="text-gray-400">Our XGBoost model calculates a dynamic 'Suspicion Score' based on hundreds of
+              behavioral and transactional data points.</p>
+          </div>
+          <div class="step-item flex-1">
+            <div class="bg-midnight-blue p-6 rounded-full inline-block border-2 border-aquamarine-green mb-4">
+              <svg class="w-10 h-10 text-aquamarine-green" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9" />
+              </svg>
+            </div>
+            <h3 class="text-xl mb-2">Instant Flagging</h3>
+            <p class="text-gray-400">High-risk transactions are immediately flagged and sent to your dashboard for human
+              review and action.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 4: Core Features -->
+    <section class="py-20 bg-midnight-blue">
+      <div class="container mx-auto px-6 text-center">
+        <h2 class="text-3xl md:text-4xl mb-12">A Complete Sentinel Toolkit</h2>
+        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div class="feature-card bg-gray-900/50 p-6 rounded-lg border-2">
+            <h3 class="text-xl mb-2">Real-Time Dashboard</h3>
+            <p class="text-gray-400">Monitor live transactions and review suspicious activity from a single, intuitive
+              interface.</p>
+          </div>
+          <div class="feature-card bg-gray-900/50 p-6 rounded-lg border-2">
+            <h3 class="text-xl mb-2">Dynamic Suspicion Scoring</h3>
+            <p class="text-gray-400">Go beyond binary rules with a granular risk score for every single transaction.</p>
+          </div>
+          <div class="feature-card bg-gray-900/50 p-6 rounded-lg border-2">
+            <h3 class="text-xl mb-2">Adaptive Learning</h3>
+            <p class="text-gray-400">Analyst feedback retrains the model, making it smarter and more accurate over time.
+            </p>
+          </div>
+          <div class="feature-card bg-gray-900/50 p-6 rounded-lg border-2">
+            <h3 class="text-xl mb-2">Simple Integration</h3>
+            <p class="text-gray-400">Integrate AuraGuard into your existing workflow with just a few lines of code via
+              our REST API.</p>
+          </div>
+        </div>
+      </div>
+    </section>
   </div>
-</div>
+  </div>
 
-<script>
-document.addEventListener('DOMContentLoaded', () => {
-  const homepage = document.getElementById('homepage');
-  const dashboard = document.getElementById('dashboard');
-  const viewDemoBtn = document.getElementById('view-demo-btn');
-  const logoutBtn = document.getElementById('logout-btn');
+  <!-- ================= DASHBOARD ================= -->
+  <div id="dashboard" class="hidden">
+    <div class="flex h-screen bg-midnight-blue">
+      <!-- Sidebar -->
+      <nav class="w-64 bg-gray-900/50 flex-shrink-0 flex flex-col">
+        <div class="h-16 flex items-center justify-center border-b border-gray-700">
+          <h1 class="text-2xl text-white">AuraGuard</h1>
+        </div>
+        <ul class="flex-grow p-4">
+          <li class="mb-2">
+            <a href="#" id="dashboard-btn"
+              class="flex items-center p-3 rounded-lg bg-aquamarine-green text-midnight-blue font-bold">
+              Dashboard
+            </a>
+          </li>
+          <li class="mb-2">
+            <a href="#" id="all-transactions-btn"
+              class="flex items-center p-3 rounded-lg text-gray-400 hover:bg-gray-700">
+              All Transactions
+            </a>
+          </li>
+          <li class="mb-2">
+            <a href="#" id="reports-btn" class="flex items-center p-3 rounded-lg text-gray-400 hover:bg-gray-700">
+              Reports
+            </a>
+          </li>
+        </ul>
+        <div class="p-4 border-t border-gray-700">
+          <a href="#" id="logout-btn" class="flex items-center p-3 rounded-lg text-gray-400 hover:bg-gray-700">Log
+            Out</a>
+        </div>
+      </nav>
 
-  const tableBody = document.getElementById('transactions-table-body');
-  const kpiTotalEl = document.getElementById('kpi-total');
-  const kpiFlaggedEl = document.getElementById('kpi-flagged');
-  const kpiFraudEl = document.getElementById('kpi-fraud');
+      <!-- Main Content -->
+      <main class="flex-1 p-6 overflow-y-auto">
+        <!-- KPIs -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-6">
+          <div class="bg-gray-900/50 p-5 rounded-lg">
+            <h4 class="text-gray-400 text-sm">Total Transactions (24h)</h4>
+            <p id="kpi-total" class="text-3xl font-bold text-white">0</p>
+          </div>
+          <div class="bg-gray-900/50 p-5 rounded-lg">
+            <h4 class="text-gray-400 text-sm">Flagged Transactions (24h)</h4>
+            <p id="kpi-flagged" class="text-3xl font-bold text-yellow-400">0</p>
+          </div>
+          <div class="bg-gray-900/50 p-5 rounded-lg">
+            <h4 class="text-gray-400 text-sm">Confirmed Fraud (Month)</h4>
+            <p id="kpi-fraud" class="text-3xl font-bold text-alert-red">0</p>
+          </div>
+          <div class="bg-gray-900/50 p-5 rounded-lg">
+            <h4 class="text-gray-400 text-sm">Model Accuracy</h4>
+            <p id="kpi-accuracy" class="text-3xl font-bold text-aquamarine-green">99.8%</p>
+          </div>
+        </div>
 
-  const detailDefault = document.getElementById('detail-default');
-  const detailActive = document.getElementById('detail-active');
-  const detailIdEl = document.getElementById('detail-id');
-  const detailAmountEl = document.getElementById('detail-amount');
-  const detailCardEl = document.getElementById('detail-card');
-  const detailMerchantEl = document.getElementById('detail-merchant');
-  const detailLocationEl = document.getElementById('detail-location');
-  const detailReasonsEl = document.getElementById('detail-reasons');
+        <!-- Main Panels -->
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-6 h-[calc(100vh-12rem)]">
+          <!-- Suspicious Queue -->
+          <div class="lg:col-span-2 bg-gray-900/50 rounded-lg flex flex-col">
+            <div class="p-4 border-b border-gray-700">
+              <h3 class="text-lg flex items-center">
+                Suspicious Activity Queue
+                <span
+                  class="ml-3 text-xs bg-green-500 text-white font-bold px-2 py-1 rounded-full live-pulse">LIVE</span>
+              </h3>
+            </div>
+            <div class="flex-grow overflow-y-auto custom-scrollbar">
+              <table class="w-full text-sm text-left">
+                <thead class="sticky top-0 bg-gray-900/50">
+                  <tr>
+                    <th class="p-3">Transaction ID</th>
+                    <th class="p-3">Amount</th>
+                    <th class="p-3">Suspicion Score</th>
+                    <th class="p-3">Status</th>
+                    <th class="p-3">Action</th>
+                  </tr>
+                </thead>
+                <tbody id="transactions-table-body"></tbody>
+              </table>
+            </div>
+          </div>
 
-  const confirmFraudBtn = document.getElementById('confirm-fraud-btn');
-  const markLegitBtn = document.getElementById('mark-legit-btn');
+          <!-- Transaction Detail Panel -->
+          <div id="detail-panel" class="bg-gray-900/50 rounded-lg p-4 flex flex-col">
+            <div id="detail-default" class="m-auto text-center text-gray-500">
+              <p>Select a transaction to view details.</p>
+            </div>
+            <div id="detail-active" class="hidden flex-grow flex flex-col">
+              <h3 class="text-lg mb-4 border-b border-gray-700 pb-2">
+                Reviewing Transaction <span id="detail-id" class="font-data text-aquamarine-green"></span>
+              </h3>
+              <div class="flex-grow space-y-3 text-sm">
+                <p><strong class="text-gray-400 w-24 inline-block">Amount:</strong> <span id="detail-amount"></span></p>
+                <p><strong class="text-gray-400 w-24 inline-block">Card:</strong> <span id="detail-card"
+                    class="font-data"></span></p>
+                <p><strong class="text-gray-400 w-24 inline-block">Merchant:</strong> <span id="detail-merchant"></span>
+                </p>
+                <p><strong class="text-gray-400 w-24 inline-block">Location:</strong> <span id="detail-location"></span>
+                </p>
+                <div class="pt-3">
+                  <h4 class="font-bold text-yellow-400">Why was this flagged?</h4>
+                  <ul id="detail-reasons" class="list-disc list-inside text-gray-300 mt-2"></ul>
+                </div>
+              </div>
+              <div class="grid grid-cols-2 gap-4 mt-4">
+                <button id="confirm-fraud-btn"
+                  class="w-full bg-alert-red text-white font-bold py-2 rounded-lg hover:bg-red-500 transition">[✖]
+                  Confirm Fraud</button>
+                <button id="mark-legit-btn"
+                  class="w-full bg-green-600 text-white font-bold py-2 rounded-lg hover:bg-green-500 transition">[✔]
+                  Mark as Legitimate</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+  </div>
 
-  const allTransactionsBtn = document.getElementById('all-transactions-btn');
-  const reportsBtn = document.getElementById('reports-btn');
-  const dashboardBtn = document.getElementById('dashboard-btn');
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const homepage = document.getElementById('homepage');
+      const dashboard = document.getElementById('dashboard');
+      const viewDemoBtn = document.getElementById('view-demo-btn');
+      const logoutBtn = document.getElementById('logout-btn');
 
-  let transactions = [];
-  let currentReviewingId = null;
-  let intervalId;
+      const tableBody = document.getElementById('transactions-table-body');
+      const kpiTotalEl = document.getElementById('kpi-total');
+      const kpiFlaggedEl = document.getElementById('kpi-flagged');
+      const kpiFraudEl = document.getElementById('kpi-fraud');
 
-  // --- Page switch ---
-  viewDemoBtn.addEventListener('click', () => {
-    homepage.classList.add('hidden');
-    dashboard.classList.remove('hidden');
-    startDashboard();
-  });
+      const detailDefault = document.getElementById('detail-default');
+      const detailActive = document.getElementById('detail-active');
+      const detailIdEl = document.getElementById('detail-id');
+      const detailAmountEl = document.getElementById('detail-amount');
+      const detailCardEl = document.getElementById('detail-card');
+      const detailMerchantEl = document.getElementById('detail-merchant');
+      const detailLocationEl = document.getElementById('detail-location');
+      const detailReasonsEl = document.getElementById('detail-reasons');
 
-  logoutBtn.addEventListener('click', () => {
-    clearInterval(intervalId);
-    dashboard.classList.add('hidden');
-    homepage.classList.remove('hidden');
-  });
+      const confirmFraudBtn = document.getElementById('confirm-fraud-btn');
+      const markLegitBtn = document.getElementById('mark-legit-btn');
 
-  // --- Fetch Transactions from backend ---
-  async function fetchTransactions() {
-    try {
-      const res = await fetch(' https://aura-guard.onrender.com/transactions');
-      const data = await res.json();
-      return data;
-    } catch (err) {
-      console.error('Failed to fetch transactions', err);
-      return [];
-    }
-  }
+      const allTransactionsBtn = document.getElementById('all-transactions-btn');
+      const reportsBtn = document.getElementById('reports-btn');
+      const dashboardBtn = document.getElementById('dashboard-btn');
 
-  async function fetchFlaggedTransactions() {
-    try {
-      const res = await fetch(' https://aura-guard.onrender.com/flagged-transactions');
-      const data = await res.json();
-      return data;
-    } catch (err) {
-      console.error('Failed to fetch flagged transactions', err);
-      return [];
-    }
-  }
+      let transactions = [];
+      let currentReviewingId = null;
+      let intervalId;
 
-  function renderTable(txns) {
-    tableBody.innerHTML = txns.map(t => {
-      const scoreColor = t.suspicionScore > 85 ? 'bg-red-500' : t.suspicionScore > 70 ? 'bg-yellow-500' : 'bg-green-500';
-      let statusClass = '';
-      switch(t.status){
-        case 'Pending Review': statusClass='text-yellow-400'; break;
-        case 'Confirmed Fraud': statusClass='text-red-500 font-bold'; break;
-        case 'Dismissed': statusClass='text-gray-500'; break;
+      // --- Page switch ---
+      viewDemoBtn.addEventListener('click', () => {
+        homepage.classList.add('hidden');
+        dashboard.classList.remove('hidden');
+        startDashboard();
+      });
+
+      logoutBtn.addEventListener('click', () => {
+        clearInterval(intervalId);
+        dashboard.classList.add('hidden');
+        homepage.classList.remove('hidden');
+      });
+
+      // --- Fetch Transactions from backend ---
+      async function fetchTransactions() {
+        try {
+          const res = await fetch(' https://aura-guard.onrender.com/transactions');
+          const data = await res.json();
+          return data;
+        } catch (err) {
+          console.error('Failed to fetch transactions', err);
+          return [];
+        }
       }
-      return `<tr class="hover:bg-gray-800 border-b border-gray-800">
+
+      async function fetchFlaggedTransactions() {
+        try {
+          const res = await fetch(' https://aura-guard.onrender.com/flagged-transactions');
+          const data = await res.json();
+          return data;
+        } catch (err) {
+          console.error('Failed to fetch flagged transactions', err);
+          return [];
+        }
+      }
+
+      function renderTable(txns) {
+        tableBody.innerHTML = txns.map(t => {
+          const scoreColor = t.suspicionScore > 85 ? 'bg-red-500' : t.suspicionScore > 70 ? 'bg-yellow-500' : 'bg-green-500';
+          let statusClass = '';
+          switch (t.status) {
+            case 'Pending Review': statusClass = 'text-yellow-400'; break;
+            case 'Confirmed Fraud': statusClass = 'text-red-500 font-bold'; break;
+            case 'Dismissed': statusClass = 'text-gray-500'; break;
+          }
+          return `<tr class="hover:bg-gray-800 border-b border-gray-800">
         <td class="p-3 font-data">${t.id}</td>
         <td class="p-3">$${t.amount.toFixed(2)}</td>
         <td class="p-3">
@@ -262,83 +453,84 @@ document.addEventListener('DOMContentLoaded', () => {
           <button data-id="${t.id}" class="review-btn bg-aquamarine-green text-midnight-blue text-xs font-bold px-3 py-1 rounded-full hover:bg-cyan-300" ${t.status !== 'Pending Review' ? 'disabled' : ''}>Review</button>
         </td>
       </tr>`;
-    }).join('');
+        }).join('');
 
-    document.querySelectorAll('.review-btn').forEach(btn => {
-      btn.addEventListener('click', () => openDetailPanel(btn.dataset.id));
-    });
-  }
+        document.querySelectorAll('.review-btn').forEach(btn => {
+          btn.addEventListener('click', () => openDetailPanel(btn.dataset.id));
+        });
+      }
 
-  async function openDetailPanel(id) {
-    const txn = transactions.find(t => t.id === id);
-    if (!txn) return;
-    currentReviewingId = id;
+      async function openDetailPanel(id) {
+        const txn = transactions.find(t => t.id === id);
+        if (!txn) return;
+        currentReviewingId = id;
 
-    detailIdEl.textContent = txn.id;
-    detailAmountEl.textContent = `$${txn.amount.toFixed(2)}`;
-    detailCardEl.textContent = txn.card;
-    detailMerchantEl.textContent = txn.merchant;
-    detailLocationEl.textContent = txn.location;
-    detailReasonsEl.innerHTML = txn.reasons.map(r => `<li>${r}</li>`).join('');
+        detailIdEl.textContent = txn.id;
+        detailAmountEl.textContent = `$${txn.amount.toFixed(2)}`;
+        detailCardEl.textContent = txn.card;
+        detailMerchantEl.textContent = txn.merchant;
+        detailLocationEl.textContent = txn.location;
+        detailReasonsEl.innerHTML = txn.reasons.map(r => `<li>${r}</li>`).join('');
 
-    detailDefault.classList.add('hidden');
-    detailActive.classList.remove('hidden');
-  }
+        detailDefault.classList.add('hidden');
+        detailActive.classList.remove('hidden');
+      }
 
-  async function updateTransactionStatus(status) {
-    if (!currentReviewingId) return;
-    try {
-      await fetch(` https://aura-guard.onrender.com/transactions/${currentReviewingId}/status`, {
-        method:'PATCH',
-        headers:{'Content-Type':'application/json'},
-        body: JSON.stringify({status})
+      async function updateTransactionStatus(status) {
+        if (!currentReviewingId) return;
+        try {
+          await fetch(` https://aura-guard.onrender.com/transactions/${currentReviewingId}/status`, {
+            method: 'PATCH',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ status })
+          });
+          currentReviewingId = null;
+          detailActive.classList.add('hidden');
+          detailDefault.classList.remove('hidden');
+          refreshDashboard();
+        } catch (err) { console.error(err); }
+      }
+
+      confirmFraudBtn.addEventListener('click', () => updateTransactionStatus('Confirmed Fraud'));
+      markLegitBtn.addEventListener('click', () => updateTransactionStatus('Dismissed'));
+
+      dashboardBtn.addEventListener('click', refreshDashboard);
+
+      allTransactionsBtn.addEventListener('click', async () => {
+        const allTxns = await fetchTransactions();
+        renderTable(allTxns);
       });
-      currentReviewingId = null;
-      detailActive.classList.add('hidden');
-      detailDefault.classList.remove('hidden');
-      refreshDashboard();
-    } catch(err) { console.error(err); }
-  }
 
-  confirmFraudBtn.addEventListener('click', ()=>updateTransactionStatus('Confirmed Fraud'));
-  markLegitBtn.addEventListener('click', ()=>updateTransactionStatus('Dismissed'));
+      reportsBtn.addEventListener('click', async () => {
+        try {
+          const res = await fetch(' https://aura-guard.onrender.com/reports');
+          const data = await res.json();
+          alert(`Confirmed Frauds: ${data.confirmedFraud}`);
+        } catch (err) { console.error(err); }
+      });
 
-  dashboardBtn.addEventListener('click', refreshDashboard);
+      async function refreshDashboard() {
+        transactions = await fetchFlaggedTransactions();
+        renderTable(transactions);
 
-  allTransactionsBtn.addEventListener('click', async () => {
-    const allTxns = await fetchTransactions();
-    renderTable(allTxns);
-  });
+        const total = (await fetchTransactions()).length;
+        const flagged = transactions.length;
+        const fraudRes = await fetch(' https://aura-guard.onrender.com/reports');
+        const fraudData = await fraudRes.json();
 
-  reportsBtn.addEventListener('click', async () => {
-    try {
-      const res = await fetch(' https://aura-guard.onrender.com/reports');
-      const data = await res.json();
-      alert(`Confirmed Frauds: ${data.confirmedFraud}`);
-    } catch(err){console.error(err);}
-  });
+        kpiTotalEl.textContent = total;
+        kpiFlaggedEl.textContent = flagged;
+        kpiFraudEl.textContent = fraudData.confirmedFraud;
+      }
 
-  async function refreshDashboard() {
-    transactions = await fetchFlaggedTransactions();
-    renderTable(transactions);
+      function startDashboard() {
+        refreshDashboard();
+        intervalId = setInterval(refreshDashboard, 2000);
+      }
 
-    const total = (await fetchTransactions()).length;
-    const flagged = transactions.length;
-    const fraudRes = await fetch(' https://aura-guard.onrender.com/reports');
-    const fraudData = await fraudRes.json();
-
-    kpiTotalEl.textContent = total;
-    kpiFlaggedEl.textContent = flagged;
-    kpiFraudEl.textContent = fraudData.confirmedFraud;
-  }
-
-  function startDashboard() {
-    refreshDashboard();
-    intervalId = setInterval(refreshDashboard, 2000);
-  }
-
-});
-</script>
+    });
+  </script>
 
 </body>
+
 </html>
