@@ -76,12 +76,12 @@ function generateRandomTransaction() {
 }
 
 // Add a new transaction every 2 seconds
-setInterval(() => {
-  const transactions = readTransactions();
-  transactions.push(generateRandomTransaction());
-  writeTransactions(transactions);
-  console.log('New transaction generated. Total:', transactions.length);
-}, 5000);
+// setInterval(() => {
+//   const transactions = readTransactions();
+//   transactions.push(generateRandomTransaction());
+//   writeTransactions(transactions);
+//   console.log('New transaction generated. Total:', transactions.length);
+// }, 5000);
 
 // ---------------------- Start Server ----------------------
 app.listen(PORT, () => {
