@@ -408,7 +408,7 @@
       // --- Fetch Transactions from backend ---
       async function fetchTransactions() {
         try {
-          const res = await fetch('https://auraguard-backend.onrender.com/transactions');
+          const res = await fetch('https://aura-guard.onrender.com/transactions');
           const data = await res.json();
           return data;
         } catch (err) {
@@ -419,7 +419,7 @@
 
       async function fetchFlaggedTransactions() {
         try {
-          const res = await fetch('https://auraguard-backend.onrender.com/flagged-transactions');
+          const res = await fetch('https://aura-guard.onrender.com/flagged-transactions');
           const data = await res.json();
           return data;
         } catch (err) {
@@ -479,7 +479,7 @@
       async function updateTransactionStatus(status) {
         if (!currentReviewingId) return;
         try {
-          await fetch(`https://auraguard-backend.onrender.com/transactions/${currentReviewingId}/status`, {
+          await fetch(`https://aura-guard.onrender.com/transactions/${currentReviewingId}/status`, {
             method: 'PATCH',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({ status })
@@ -503,7 +503,7 @@
 
       reportsBtn.addEventListener('click', async () => {
         try {
-          const res = await fetch('https://auraguard-backend.onrender.com/reports');
+          const res = await fetch('https://aura-guard.onrender.com/reports');
           const data = await res.json();
           alert(`Confirmed Frauds: ${data.confirmedFraud}`);
         } catch (err) { console.error(err); }
@@ -515,7 +515,7 @@
 
         const total = (await fetchTransactions()).length;
         const flagged = transactions.length;
-        const fraudRes = await fetch('https://auraguard-backend.onrender.com/reports');
+        const fraudRes = await fetch('https://aura-guard.onrender.com/reports');
         const fraudData = await fraudRes.json();
 
         kpiTotalEl.textContent = total;
