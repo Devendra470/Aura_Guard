@@ -120,8 +120,7 @@
       <div class="absolute inset-0 bg-black/60 z-0"></div>
       <video autoplay muted loop
         class="absolute top-1/2 left-1/2 w-full h-full object-cover transform -translate-x-1/2 -translate-y-1/2 z-0">
-        <source src="1756657743068.mp4"
-          type="video/mp4">
+        <source src="1756657743068.mp4" type="video/mp4">
       </video>
       <div class="relative z-10 p-6">
         <h1 class="text-4xl md:text-6xl lg:text-7xl text-white">AuraGuard: AI-Powered Fraud Detection</h1>
@@ -345,13 +344,13 @@
                   <ul id="detail-reasons" class="list-disc list-inside text-gray-300 mt-2"></ul>
                 </div>
                 <div class="grid grid-cols-2 gap-4 mt-4">
-                <button id="confirm-fraud-btn"
-                  class="w-full bg-alert-red text-white font-bold py-2 rounded-lg hover:bg-red-500 transition">[✖]
-                  Confirm Fraud</button>
-                <button id="mark-legit-btn"
-                  class="w-full bg-green-600 text-white font-bold py-2 rounded-lg hover:bg-green-500 transition">[✔]
-                  Mark as Legitimate</button>
-              </div>
+                  <button id="confirm-fraud-btn"
+                    class="w-full bg-alert-red text-white font-bold py-2 rounded-lg hover:bg-red-500 transition">[✖]
+                    Confirm Fraud</button>
+                  <button id="mark-legit-btn"
+                    class="w-full bg-green-600 text-white font-bold py-2 rounded-lg hover:bg-green-500 transition">[✔]
+                    Mark as Legitimate</button>
+                </div>
               </div>
               <div class="grid grid-cols-2 gap-4 mt-4">
                 <button id="confirm-fraud-btn"
@@ -399,6 +398,17 @@
       let transactions = [];
       let currentReviewingId = null;
       let intervalId;
+      // --- NEW: Function to handle active button styles ---
+      function setActiveButton(activeButton) {
+        const allSidebarButtons = [dashboardBtn, allTransactionsBtn, reportsBtn];
+        allSidebarButtons.forEach(btn => {
+          btn.classList.remove('bg-aquamarine-green', 'text-midnight-blue', 'font-bold');
+          btn.classList.add('text-gray-400', 'hover:bg-gray-700');
+        });
+
+        activeButton.classList.remove('text-gray-400', 'hover:bg-gray-700');
+        activeButton.classList.add('bg-aquamarine-green', 'text-midnight-blue', 'font-bold');
+      }
 
       // --- Page switch ---
       viewDemoBtn.addEventListener('click', () => {
@@ -502,14 +512,24 @@
       confirmFraudBtn.addEventListener('click', () => updateTransactionStatus('Confirmed Fraud'));
       markLegitBtn.addEventListener('click', () => updateTransactionStatus('Dismissed'));
 
-      dashboardBtn.addEventListener('click', refreshDashboard);
+      // --- MODIFIED: Added setActiveButton() call
+      dashboardBtn.addEventListener('click', () => {
+        setActiveButton(dashboardBtn);
+        refreshDashboard();
+      });
 
+      // --- MODIFIED: Added setActiveButton() and clearInterval() calls
       allTransactionsBtn.addEventListener('click', async () => {
+        setActiveButton(allTransactionsBtn);
+        clearInterval(intervalId); // Stop dashboard auto-refresh
         const allTxns = await fetchTransactions();
         renderTable(allTxns);
       });
 
+      // --- MODIFIED: Added setActiveButton() call
       reportsBtn.addEventListener('click', async () => {
+        setActiveButton(reportsBtn);
+        clearInterval(intervalId); // Stop dashboard auto-refresh
         try {
           const res = await fetch('https://aura-guard.onrender.com/reports');
           const data = await res.json();
